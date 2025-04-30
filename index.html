@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <h1>User Information Form</h1>
+                <p class="form-description">Please fill out the following information</p>
+                <div class="form-header-bar"></div>
+            </div>
+            
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="fullName">Full Name <span class="required">*</span></label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="Your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="contactNumber">Contact Number <span class="required">*</span></label>
+                    <input type="tel" id="contactNumber" name="contactNumber" required placeholder="Your phone number">
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address <span class="required">*</span></label>
+                    <textarea id="address" name="address" rows="3" required placeholder="Your complete address"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="companyName">Company Name <span class="required">*</span></label>
+                    <input type="text" id="companyName" name="companyName" required placeholder="Your company name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="Your email address">
+                </div>
+
+                <div class="form-group">
+                    <label for="department">Department <span class="required">*</span></label>
+                    <select id="department" name="department" required>
+                        <option value="" selected disabled>Choose a department</option>
+                        <option value="hr">HR</option>
+                        <option value="sales">Sales</option>
+                        <option value="development">Development</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="label-heading">Gender <span class="required">*</span></label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="prefer-not" name="gender" value="prefer-not">
+                            <label for="prefer-not">Prefer not to say</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-button">Submit</button>
+                </div>
+            </form>
+            
+            <div class="form-footer">
+                <p>Thank you for your time. Your information will be kept confidential.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
